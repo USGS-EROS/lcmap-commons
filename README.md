@@ -21,7 +21,7 @@ provide the science community with real-time access to decades of Landsat
 Analysis Ready Data (ARD).  The LCMAP system clojure code requires a base
 library to prevent code duplication.  
 
-*  This project should not depend on any other LCMAP project ( except lcmap-system ) to prevent circular dependencies.
+This project should not depend on any other LCMAP project ( except lcmap-system ) to prevent circular dependencies.
 
 ## Documentation [&#x219F;](#contents)
 
