@@ -21,11 +21,13 @@
                   [org.clojure/data.json]
                   [org.clojure/data.xml]
                   [org.clojure/core.memoize]
-                 ;; Error Handling
+                   ;; Error Handling
                   [dire]
                   [slingshot]
-                 ;; Dev and project metadata
-                  [leiningen-core]]
+                   ;; Dev and project metadata
+                  [leiningen-core]
+                  ;; for lcmap-commons/time
+                  [clj-time/clj-time]]
    :plugins [[lein-parent "0.3.0"]]
    :repl-options {:init-ns lcmap.commons.dev}
    :codox {

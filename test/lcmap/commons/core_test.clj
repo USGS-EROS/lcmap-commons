@@ -1,4 +1,4 @@
-(ns lcmap-commons.core-test
+(ns lcmap.commons.core-test
   (:require [clojure.test :refer :all]
             [lcmap-commons.core :refer :all]))
 
