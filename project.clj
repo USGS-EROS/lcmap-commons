@@ -1,14 +1,14 @@
   (defproject gov.usgs.eros/lcmap-commons "1.0.0-SNAPSHOT"
-   :parent-project {}
-    :coords [gov.usgs.eros/lcmap-system "1.0.0-SNAPSHOT"]
-    :inherit []
-      :deploy-repositories
-      :license
-      :managed-dependencies
-      :plugins
-      :pom-addition
-      :repositories
-      :target
+   :parent-project {
+                    :coords [gov.usgs.eros/lcmap-system "1.0.0-SNAPSHOT"]
+                    :inherit [
+                              :deploy-repositories
+                              :license
+                              :managed-dependencies
+                              :plugins
+                              :pom-addition
+                              :repositories
+                              :target]}
       ;; XXX The following can be un-commented once this issue is resolved:
       ;;     * https://github.com/achin/lein-parent/issues/3
       ;; [:profiles [:uberjar :dev]]
@@ -28,20 +28,21 @@
                   [leiningen-core]]
    :plugins [[lein-parent "0.3.0"]]
    :repl-options {:init-ns lcmap.commons.dev}
-   :codox {:project {:name "lcmap.commons"
+   :codox {
+           :project {:name "lcmap.commons"
                      :description "Base common library for lcmap"}
            :namespaces [#"^lcmap.commons\."]
            :output-path "docs/master/current"
            :doc-paths ["docs/source"]
            :metadata {:doc/format :markdown
                       :doc "Documentation forthcoming"}}
-   :profiles {}
-    :uberjar {:aot :all}
-    ;; configuration for dev environment -- if you need to make local changes,
-    ;; copy `:env { ... }` into `{:user ...}` in your ~/.lein/profiles.clj and
-    ;; then override values there
-    :dev {}
-      :dependencies [[org.clojure/tools.namespace "0.3.0-alpha3"]
-                     [slamhound "1.5.5"]]
-      :aliases {"slamhound" ["run" "-m" "slam.hound"]}
-      :source-paths ["dev-resources/src"])
+   :profiles {
+              :uberjar {:aot :all}
+              ;; configuration for dev environment -- if you need to make local changes,
+              ;; copy `:env { ... }` into `{:user ...}` in your ~/.lein/profiles.clj and
+              ;; then override values there
+              :dev {
+                    :dependencies [[org.clojure/tools.namespace "0.3.0-alpha3"]
+                                   [slamhound "1.5.5"]]
+                    :aliases {"slamhound" ["run" "-m" "slam.hound"]}
+                    :source-paths ["dev-resources/src"]}})

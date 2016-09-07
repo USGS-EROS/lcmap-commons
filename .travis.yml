@@ -4,7 +4,7 @@
 #language: clojure
 language: java
 install: test/support/travis_install.sh
-after_install: test/support/setup_deps.sh
+#after_install: test/support/setup_deps.sh
 before_script: lein version && lein deps && lein compile
 script: make check
 jdk:
@@ -26,5 +26,4 @@ notifications:
       - duncan.mcgreggor.ctr@usgs.gov
   slack:
     rooms:
-      - lcmap:UTqlh9PfPVomfpli10WKyZoh#cicd
-      - lcmap:UTqlh9PfPVomfpli10WKyZoh#logger
+      - lcmap:UTqlh9PfPVomfpli10WKyZoh#commons
