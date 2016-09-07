@@ -1,0 +1,7 @@
+target
+checkouts
+.lein*
+.nrepl*
+*.*~
+docs/master/current
+pom.xml*
