@@ -1,6 +1,6 @@
-(ns lcmap.commons.core-test
+(ns lcmap.commons.time-test
   (:require [clojure.test :refer :all]
-            [lcmap-commons.core :refer :all]))
+            [lcmap.commons.time :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
