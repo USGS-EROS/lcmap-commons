@@ -1,7 +1,11 @@
 (ns lcmap.commons.time-test
   (:require [clojure.test :refer :all]
-            [lcmap.commons.time :refer :all]))
+            [lcmap.commons.time :refer :all]
+            [clj-time.core :as t]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest timestamp-test
+   (testing "lcmap.commons.time timestamps"
+       (let [ts (t/now)]
+           (is (= ts
+                  (str->timestamp
+                      (timestamp->str ts)))))))
