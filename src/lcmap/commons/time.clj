@@ -7,6 +7,8 @@
   "ISO 8601 compliant time format "
   (f/formatters :date-time))
 
+(def lcmap-format-regex #"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z")
+
 (defn str->timestamp
   "String to timestamp as org.joda.time.DateTime"
   [ts-str]
