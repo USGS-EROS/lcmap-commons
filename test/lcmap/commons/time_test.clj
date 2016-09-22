@@ -4,8 +4,7 @@
             [clj-time.core :as t]))
 
 (deftest timestamp-test
+  "Tests lcmap.commons.time/timestamp, timestamp->str and str->timestamp"
   (testing "lcmap.commons.time timestamps"
-    (let [ts (t/now)]
-      (is (= ts
-             (str->timestamp
-              (timestamp->str ts)))))))
+    (let [ts (timestamp)]
+      (= ts (timestamp->str (str->timestamp ts))))))
