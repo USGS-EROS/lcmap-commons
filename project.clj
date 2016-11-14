@@ -44,7 +44,6 @@
               ;; copy `:env { ... }` into `{:user ...}` in your ~/.lein/profiles.clj and
               ;; then override values there
               :dev {
-                    :dependencies [[org.clojure/tools.namespace "0.3.0-alpha3"]
-                                   [slamhound "1.5.5"]]
-                    :aliases {"slamhound" ["run" "-m" "slam.hound"]}
+                    :dependencies [[org.clojure/tools.namespace "0.3.0-alpha3"]]
+                    :aliases {}
                     :source-paths ["dev-resources/src"]}})
