@@ -6,7 +6,7 @@ language: java
 install: test/support/travis_install.sh
 #after_install: test/support/setup_deps.sh
 before_script: lein version && lein deps && lein compile
-script: make check
+script: lein test
 jdk:
   - oraclejdk8
   #- oraclejdk7
