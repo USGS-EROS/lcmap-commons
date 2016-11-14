@@ -22,3 +22,8 @@
 (defn timestamp
   "Return current timestamp"
   ([] (timestamp->str (t/now))))
+
+(defn timestamp?
+  "Is x a timestamp?"
+  [x]
+  (not (nil? (re-matches lcmap-format-regex x))))
