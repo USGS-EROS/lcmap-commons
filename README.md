@@ -31,11 +31,11 @@ project's auto-generated documentation is available here:
 * [http://usgs-eros.github.io/lcmap-commons](http://usgs-eros.github.io/lcmap-commons)
 
 
-## Configuration [&#x219F;](#contents)
+## Configuration [&#x219F;](#configuration)
 
 TBD
 
-## Usage [&#x219F;](#contents)
+## Usage [&#x219F;](#usage)
 
 TBD
 
