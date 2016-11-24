@@ -35,7 +35,7 @@ project's auto-generated documentation is available here:
 
 TBD
 
-## Usage [&#x219F;](#contents)
+## Usage [&#x219F;](#usage)
 
 TBD
 
