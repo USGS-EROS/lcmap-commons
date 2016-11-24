@@ -23,3 +23,9 @@
     (is (= "/only-one-please"     (singular "/" "/////only-one-please")))
     (is (= "/they/are/everywhere" (singular "/" "////they//are///everywhere")))
     (is (= "nothing-happening"    (singular "/" "nothing-happening")))))
+
+(deftest remove-all-trailing-test
+  (testing "lcmap.commons.string/remove-all-trailing"
+    (is (= "http://lots" (remove-all-trailing "/" "http://lots////////")))
+    (is (= "http://untouched" (remove-all-trailing "/" "http://untouched")))
+    (is (= "http://one" (remove-all-trailing "/" "http://one/")))))

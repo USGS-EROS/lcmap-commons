@@ -17,3 +17,10 @@
   "Replaces multiple tokens with a single."
   (let [regex (re-pattern (str token "+"))]
     (str/replace value regex token)))
+
+(defn remove-all-trailing [token value]
+  "Removes all occurances of trailing tokens from a value"
+  (if (str/ends-with? value token)
+    (let [regex (re-pattern (str "(?<=.)" token "$"))]
+      (remove-all-trailing token (str/replace value regex "")))
+    (str value)))
