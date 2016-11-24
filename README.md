@@ -14,7 +14,7 @@
 * [Usage](#usage-)
 * [License](#license-)
 
-## About [&#x219F;](#contents)
+## About [&#x219F;](#about)
 
 The Land Change Monitoring Assessment and Projection (LCMAP) system will
 provide the science community with real-time access to decades of Landsat
@@ -23,7 +23,7 @@ library to prevent code duplication.
 
 This project should not depend on any other LCMAP project ( except lcmap-system ) to prevent circular dependencies.
 
-## Documentation [&#x219F;](#contents)
+## Documentation [&#x219F;](#documentation)
 
 The LCMAP Commons reference is being updated with docstrings. The
 project's auto-generated documentation is available here:
@@ -38,13 +38,6 @@ TBD
 ## Usage [&#x219F;](#contents)
 
 TBD
-
-
-# License [&#x219F;](#contents)
-
-Copyright © 2015-2016 United States Government
-
-NASA Open Source Agreement, Version 1.3
 
 <!-- Named page links below: /-->
 
