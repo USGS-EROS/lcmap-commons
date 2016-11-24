@@ -39,10 +39,6 @@ TBD
 
 TBD
 
-
-# License [&#x219F;](#license)
-Unlicense
-
 <!-- Named page links below: /-->
 
 [travis]: https://travis-ci.org/USGS-EROS/lcmap-commons
