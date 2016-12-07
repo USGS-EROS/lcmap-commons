@@ -20,7 +20,6 @@
 
 (defn remove-all-trailing [token value]
   "Removes all occurances of trailing tokens from a value"
-  (if (str/ends-with? value token)
-    (let [regex (re-pattern (str "(?<=.)" token "$"))]
-      (remove-all-trailing token (str/replace value regex "")))
-    (str value)))
+  (if (= token (str (last value)))
+   (remove-all-trailing token (butlast value))
+   (apply str value)))
