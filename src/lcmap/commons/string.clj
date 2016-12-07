@@ -18,8 +18,14 @@
   (let [regex (re-pattern (str token "+"))]
     (str/replace value regex token)))
 
-(defn remove-all-trailing [token value]
+(defn strip-trailing [token value]
   "Removes all occurances of trailing tokens from a value"
   (if (= token (str (last value)))
-   (remove-all-trailing token (butlast value))
+   (strip-trailing token (butlast value))
    (apply str value)))
+
+(defn strip-leading [token value]
+  "Removes all occurances of leading tokens from a value"
+  (if (= token (str (first value)))
+    (strip-leading token (rest value))
+    (apply str value)))
