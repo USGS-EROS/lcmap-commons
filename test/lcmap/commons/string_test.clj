@@ -35,3 +35,11 @@
     (is (= "http://lots" (strip-leading "/" "///////http://lots")))
     (is (= "http://untouched" (strip-leading "/" "http://untouched")))
     (is (= "http://one" (strip-leading "/" "/http://one")))))
+
+(deftest strip-both-test
+  (testing "lcmap.commons.string/strip-both"
+    (is (= "http://lots" (strip-both "/" "///////http://lots//////")))
+    (is (= "http://untouched" (strip-both "/" "http://untouched")))
+    (is (= "http://one" (strip-both "/" "/http://one/")))
+    (is (= "http://leadonly" (strip-both "/" "//http://leadonly")))
+    (is (= "http://trailonly" (strip-both "/" "http://trailonly///")))))

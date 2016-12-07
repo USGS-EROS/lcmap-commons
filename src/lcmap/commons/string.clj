@@ -29,3 +29,7 @@
   (if (= token (str (first value)))
     (strip-leading token (rest value))
     (apply str value)))
+
+(defn strip-both [token value]
+  "Removes all leading and trailing tokens"
+  (strip-leading token (strip-trailing token value)))
