@@ -24,22 +24,22 @@
     (is (= "/they/are/everywhere" (singular "/" "////they//are///everywhere")))
     (is (= "nothing-happening"    (singular "/" "nothing-happening")))))
 
-(deftest strip-trailing-test
-  (testing "lcmap.commons.string/strip-trailing"
-    (is (= "http://lots" (strip-trailing "/" "http://lots////////")))
-    (is (= "http://untouched" (strip-trailing "/" "http://untouched")))
-    (is (= "http://one" (strip-trailing "/" "http://one/")))))
+(deftest rstrip-test
+  (testing "lcmap.commons.string/rstrip"
+    (is (= "http://lots" (rstrip "/" "http://lots////////")))
+    (is (= "http://untouched" (rstrip "/" "http://untouched")))
+    (is (= "http://one" (rstrip "/" "http://one/")))))
 
-(deftest strip-leading-test
-  (testing "lcmap.commons.string/strip-leading"
-    (is (= "http://lots" (strip-leading "/" "///////http://lots")))
-    (is (= "http://untouched" (strip-leading "/" "http://untouched")))
-    (is (= "http://one" (strip-leading "/" "/http://one")))))
+(deftest lstrip-test
+  (testing "lcmap.commons.string/lstrip"
+    (is (= "http://lots" (lstrip "/" "///////http://lots")))
+    (is (= "http://untouched" (lstrip "/" "http://untouched")))
+    (is (= "http://one" (lstrip "/" "/http://one")))))
 
-(deftest strip-both-test
-  (testing "lcmap.commons.string/strip-both"
-    (is (= "http://lots" (strip-both "/" "///////http://lots//////")))
-    (is (= "http://untouched" (strip-both "/" "http://untouched")))
-    (is (= "http://one" (strip-both "/" "/http://one/")))
-    (is (= "http://leadonly" (strip-both "/" "//http://leadonly")))
-    (is (= "http://trailonly" (strip-both "/" "http://trailonly///")))))
+(deftest strip-test
+  (testing "lcmap.commons.string/strip"
+    (is (= "http://lots" (strip "/" "///////http://lots//////")))
+    (is (= "http://untouched" (strip "/" "http://untouched")))
+    (is (= "http://one" (strip "/" "/http://one/")))
+    (is (= "http://leadonly" (strip "/" "//http://leadonly")))
+    (is (= "http://trailonly" (strip "/" "http://trailonly///")))))
