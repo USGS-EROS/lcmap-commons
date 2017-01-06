@@ -1,6 +1,6 @@
-  (defproject gov.usgs.eros/lcmap-commons "1.0.0-SNAPSHOT"
+  (defproject gov.usgs.eros/lcmap-commons "1.0.0"
    :parent-project {
-                    :coords [gov.usgs.eros/lcmap-system "1.0.0-SNAPSHOT"]
+                    :coords [gov.usgs.eros/lcmap-system "1.0.0"]
                     :inherit [
                               :deploy-repositories
                               :license
