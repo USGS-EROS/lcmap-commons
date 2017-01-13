@@ -79,6 +79,9 @@
   "Transform an arbitrary projection system coordinate (x,y) into the
    coordinate of the tile that contains it.
 
+  This function only works when working with points on a cartesian plane,
+  it cannot be used with other coordinate systems.
+
   * x         - x coordinate
   * y         - y coordinate
   * tile-spec - parameters for a tile's grid system"
