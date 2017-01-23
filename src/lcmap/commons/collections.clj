@@ -3,6 +3,6 @@
 (defn vectorize
   "Guarantees value is a vector"
   [value]
-  (if (coll? value)
+  (if (and (coll? value)(not (map? value)))
     (vec value)
     (vector value)))
