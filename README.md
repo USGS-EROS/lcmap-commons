@@ -4,9 +4,28 @@
 
 Shared pure clojure functions for LCMAP.  Any code with side-effects or dependencies on other LCMAP projects do not go here.
 
-## Usage
-
 ## Installing
+
+Leiningen/Boot
+```edn
+[gov.usgs.eros/lcmap-commons "1.0.0"]
+``` 
+
+Gradle
+```
+compile "gov.usgs.eros:lcmap-commons:1.0.0"
+```
+
+Maven
+```xml
+<dependency>
+  <groupId>gov.usgs.eros</groupId>
+  <artifactId>lcmap-commons</artifactId>
+  <version>1.0.0</version>
+</dependency>```
+
+
+
 
 ## Developing & Testing
 
