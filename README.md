@@ -2,8 +2,6 @@
 
 [![Build Status][travis-badge]][travis][![Clojars Project][clojars-badge]][clojars]
 
-*LCMAP Base Library*
-
 Shared pure clojure functions for LCMAP.  Any code with side-effects or dependencies on other LCMAP projects do not go here.
 
 ## Usage
@@ -15,8 +13,7 @@ Shared pure clojure functions for LCMAP.  Any code with side-effects or dependen
 ## Contributing
 tbd.
 
-
-
+## Deploying
 
 <!-- Named page links below: /-->
 
