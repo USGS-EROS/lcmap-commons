@@ -4,40 +4,19 @@
 
 *LCMAP Base Library*
 
-[![LCMAP open source project logo][lcmap-logo]][lcmap-logo-large]
+Shared pure clojure functions for LCMAP.  Any code with side-effects or dependencies on other LCMAP projects do not go here.
 
-#### Contents
+## Usage
 
-* [About](#about-)
-* [Documentation](#documentation-)
-* [Configuration](#configuration-)
-* [Usage](#usage-)
-* [License](#license-)
+## Installing
 
-## About [&#x219F;](#about)
+## Developing & Testing
 
-The Land Change Monitoring Assessment and Projection (LCMAP) system will
-provide the science community with real-time access to decades of Landsat
-Analysis Ready Data (ARD).  The LCMAP system clojure code requires a base
-library to prevent code duplication.  
-
-This project should not depend on any other LCMAP project ( except lcmap-system ) to prevent circular dependencies.
-
-## Documentation [&#x219F;](#documentation)
-
-The LCMAP Commons reference is being updated with docstrings. The
-project's auto-generated documentation is available here:
-
-* [http://usgs-eros.github.io/lcmap-commons](http://usgs-eros.github.io/lcmap-commons)
+## Contributing
+tbd.
 
 
-## Configuration [&#x219F;](#configuration)
 
-TBD
-
-## Usage [&#x219F;](#usage)
-
-TBD
 
 <!-- Named page links below: /-->
 
