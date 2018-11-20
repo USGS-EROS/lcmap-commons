@@ -8,12 +8,12 @@ Shared pure clojure functions for LCMAP.  Any code with side-effects or dependen
 
 Leiningen/Boot
 ```edn
-[gov.usgs.eros/lcmap-commons "1.0.0"]
+[gov.usgs.eros/lcmap-commons "1.0.1"]
 ``` 
 
 Gradle
 ```
-compile "gov.usgs.eros:lcmap-commons:1.0.0"
+compile "gov.usgs.eros:lcmap-commons:1.0.1"
 ```
 
 Maven
@@ -21,7 +21,7 @@ Maven
 <dependency>
   <groupId>gov.usgs.eros</groupId>
   <artifactId>lcmap-commons</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 </dependency>
 ```
 
