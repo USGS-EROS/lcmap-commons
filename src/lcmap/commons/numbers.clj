@@ -1,10 +1,7 @@
 (ns lcmap.commons.numbers)
 
-(defmulti numberize
-  "Converts a string to a number or nil.  If the string contains a mix of
-   number and character data, returns "
-  (fn [n] (type n)))
-
+(defmulti numberize type)
+    
 (defmethod numberize :default [n]
   nil)
 
